@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculators</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="profit.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:300&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div class="header">
+        <h2><span class="green">KM/H to MPH</span> Calculator</h2>
+    </div>
+    <div class="subHeader">
+        <div class="compInterest"><a href="index.html"><h3>Compound Interest</h3></a></div>
+        <div class="loanCalc"><a href="loan.html"><h3>Loan Calculator</h3></a></div>
+        <div class="mphCalc"><a href="mphKph.html"><h3>mph to kmh</h3></a></div>
+        <div class="kphCalc"><a href="kphMph.html"><h3>km/h to MPH</h3></a></div>
+    </div>
+    <div class="container">
+        <div class="inputs">
+            <div class="inputTitles">Speed</div>
+                <span class="dollarSign"><input id="inputKPH" class="first" type="number" onChange="calculateMph()" placeholder="Initial Deposit" value="100" step=".0000001" required>KM/H</span>
+        <input id="calculate" type="submit" value="Calculate" onclick="calculateMph()">
+        </div>
+    
+        <div class="result">
+            <div id="speedKPH"></div>
+            <div id="totalInMPH"></div>
+        </div>
+    </div>
+
+    <script src="/js/kphMphCalc.js"></script>
+</body>
+</html>

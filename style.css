@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: calc(100% - 10%);
+}
+
+body {
+    font-family: 'Bebas Neue';
+    background: rgba(0, 3, 17, 0.959);
+    color: rgba(255, 255, 255, 0.897);
+}
+
+.header {
+    text-align: center;
+    font-size: 30px;
+    margin-top: .7em;
+    margin-bottom: .4em;
+}
+
+.subHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    color: rgba(0, 110, 255, 0.959);
+    font-size: 20px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(32, 93, 43);
+}
+
+a[tabindex]:focus {
+    color:rgb(32, 93, 43);
+    outline: none;
+}
+
+a:hover {
+    color: rgb(32, 93, 43);
+}
+
+.subHeader > div {
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.inputTitles {
+    margin-top: .5em;
+}
+
+.dollarSign {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    font-size: 25px;
+}
+
+input, select {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.inputs > input, select {
+    margin: auto;
+    width: 25%;
+    font-size: 25px;
+    text-align: center;
+    background: black;
+    border: 0px;
+    color: white;
+}
+
+.first, .second, .third, .fourth {
+    width: calc(25% - 25px);
+    text-align: center;
+    font-size: 25px;
+    background: black;
+    border: 0px;
+    color: white;
+}
+
+.fourth {
+    width: calc(25% - 55px);
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+#calculate {
+    width: 200px;
+    height: 70px;
+    padding: 10px;
+    background: blueviolet;
+    color: black;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#calculate:hover {
+    background: rgb(42, 42, 42);
+    cursor: pointer;
+}
+
+#calculate:active {
+    background: rgb(117, 117, 117);
+}
+
+#calculate:focus {
+    outline: none !important;
+    border: 0px;
+}
+
+.result {
+    padding: 20px;
+    margin: auto;
+    border: 0px rgb(87, 0, 0) solid;
+    width: 40%;
+    word-wrap: break-word;
+}
+
+#total {
+    color: rgb(77, 216, 100);
+}
+
+.green {
+    color: rgb(216, 77, 77);
+}
+
+::selection {
+    background: rgb(77, 216, 100);
+    color: rgb(0, 0, 0);
+}
+
+::-moz-selection {
+    background: rgb(77, 216, 100);
+    color: rgb(0, 0, 0);
+}
